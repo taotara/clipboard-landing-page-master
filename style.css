@@ -39,6 +39,7 @@ h3 {
 
 p {
   color: var(--Gray-500);
+  line-height: 36px;
 }
 
 section {
@@ -52,6 +53,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+  padding-top: 50px;
 }
 
 .header-contents {
@@ -97,10 +99,12 @@ header {
 
   .btn-ios:hover {
     background-color: hsl(from var(--Green-500) h 80 l);
+    cursor: pointer;
   }
 
   .btn-mac:hover {
     background-color: hsl(from var(--Blue-100) h 85 l);
+    cursor: pointer;
   }
 }
 
@@ -134,7 +138,7 @@ header {
     align-items: center;
 
     img {
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -145,7 +149,7 @@ header {
     align-items: center;
     gap: 30px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0;
 
     article {
       h3 {
@@ -290,22 +294,21 @@ header {
 }
 
 @media only screen and (min-width: 1440px) {
-    
-h1 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
+  h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
 
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 
-h3 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
+  h3 {
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+  }
 
   header {
     width: 100%;
@@ -315,13 +318,127 @@ h3 {
     background-position: center top;
   }
 
-  
-.header-contents {
-  width: 80%;
+  .header-contents {
+    width: 50%;
+
+    img {
+      width: 70px;
+      margin: 2rem 0;
+    }
+  }
+
+  .btn-box {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header-title {
+    width: 50%;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+
+    .left {
+      display: flex;
+      justify-content: start;
+      /* flex: 2; */
+
+      img {
+        width: 80%;
+      }
+    }
+
+    .right {
+      justify-content: start;
+      align-items: start;
+      width: 50%;
+      align-self: flex-start;
+      width: 500px;
+
+      article {
+        h3 {
+          text-align: left;
+        }
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .access-clipboard {
+    img {
+      width: 60%;
+    }
+  }
+
+  .supercharge {
+    .cards {
+      flex-direction: row;
+    }
+  }
+
+  .logos {
+  flex-direction: row;
 
   img {
-    width: 70px;
-    margin: 2rem 0;
+    width: 185px;
+  }
+}
+
+.footer-section {
+  background-color: hsl(from var(--Gray-500) h s 95);
+  padding: 40px 0;
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    .footer-inner {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      img {
+        width: 50px;
+        align-self: center;
+      }
+    }
+
+    .quick-links {
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+      gap: 80px;
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+
+        li {
+          margin: 5px 0;
+        }
+      }
+    }
+
+    .socials {
+      width: 30%;
+      justify-content: flex-end;
+      gap: 30px;
+      margin-top: 0px;
+      align-self: center;
+    }
   }
 }
 }
