@@ -276,7 +276,7 @@ header {
     }
 
     .socials {
-      width: 60%;
+      width: 30%;
       display: flex;
       justify-content: space-between;
       margin-top: 30px;
